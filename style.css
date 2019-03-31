@@ -1,0 +1,77 @@
+.desktop{
+    border: 1px solid black;
+    width: 1500px;
+    height: 900px;
+}
+.window-prop{
+    position: absolute;
+    border: 1px solid grey;
+    width: 500px;
+    height: 400px;
+    cursor: move;
+    z-index: 0;
+    background-color: lightgrey;
+    color: #fff;
+}
+.window::after{
+    content: " ";
+       background-color: #ccc;
+       position: absolute;
+       top: 0;
+       width: 4px;
+       height: 100%;
+       cursor: w-resize;
+   }
+
+.desktop .desktopsmall{
+    width: 1000px;
+    height: 600px;
+}
+.windowheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: white;
+    color: black;
+}
+.windowheader .buttons {
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+.windowheader .buttons span {
+    border-left: 1px solid #ccc;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.windowheader .buttons span:hover {
+    background: #eee;
+}  
+.resizers .resizer{
+    opacity: 100    ;
+    width: 5px;
+    height: 5px;
+    background: white;
+    position: absolute;
+}
+
+.resizers .resizer.top-left {
+    left: -5px;
+    top: -5px;
+    cursor: nwse-resize; /*resizer cursor*/
+}
+.resizers .resizer.top-right {
+    right: -5px;
+    top: -5px;
+    cursor: nesw-resize;
+}
+.resizers .resizer.bottom-left {
+    left: -5px;
+    bottom: -5px;
+    cursor: nesw-resize;
+}
+.resizers .resizer.bottom-right {
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+}
