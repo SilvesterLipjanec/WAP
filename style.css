@@ -1,8 +1,10 @@
+/* style for desktop */
 .desktop{
     border: 1px solid black;
     width: 1500px;
     height: 900px;
 }
+/* style for windows */
 .window-prop{
     position: absolute;
     border: 1px solid grey;
@@ -13,20 +15,7 @@
     background-color: lightgrey;
     color: #fff;
 }
-.window::after{
-    content: " ";
-       background-color: #ccc;
-       position: absolute;
-       top: 0;
-       width: 4px;
-       height: 100%;
-       cursor: w-resize;
-   }
-
-.desktop .desktopsmall{
-    width: 1000px;
-    height: 600px;
-}
+/* header of window */
 .windowheader {
     padding: 10px;
     cursor: move;
@@ -46,7 +35,8 @@
 }
 .windowheader .buttons span:hover {
     background: #eee;
-}  
+}
+/* styles for resizers */  
 .resizers .resizer{
     opacity: 100    ;
     width: 5px;
@@ -56,22 +46,64 @@
 }
 
 .resizers .resizer.top-left {
+    opacity: 0;
     left: -5px;
     top: -5px;
     cursor: nwse-resize; /*resizer cursor*/
 }
 .resizers .resizer.top-right {
+    opacity: 0;
     right: -5px;
     top: -5px;
     cursor: nesw-resize;
 }
 .resizers .resizer.bottom-left {
+    opacity: 0;
     left: -5px;
     bottom: -5px;
     cursor: nesw-resize;
 }
 .resizers .resizer.bottom-right {
+    opacity: 0;
     right: -5px;
     bottom: -5px;
     cursor: nwse-resize;
+}
+.resizers .resizer.left{
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    cursor: w-resize;
+}
+.resizers .resizer.right{
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    cursor: w-resize;
+}
+.resizers .resizer.top{
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    cursor: n-resize;
+}
+.resizers .resizer.bottom{
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    cursor: n-resize;
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Dokumentácia WAP</title>
+</head>
+<body>
+    <h1>Dokumentácia k projektu z predmetu WAP</h1>
+    <h3>variant - Správce oken</h3>
+    <h3>Silvester Lipjanec - xlipja01</h3>
+    <br>
+    <section>
+        <h2>Návod k použitiu</h2>
+        <h3>Prepojenie HTML a JS súboru</h3>
+        <p>K použitiu správcu okien implementovaného v súbore windows.js je potrebné tento súbor 
+            pripojiť k súboru HTML. To môžeme urobiť pomocou vloženia elemetu script do súboru HTML vrámci sekcie head
+            a nastavením parametru src=<q>cesta/k/súboru/windows.js</q>. Súbor HTML by mal obsahovať elementy
+            div s nastavenou triedou (class) <q>desktop</q> a v ňom vnorené prvky div s nastavenou triedou 
+            class=<q>window</q>.</p>
+        <h3>Volanie implementovaných funkcií</h3>
+        <p>Na konci sekcie body dokumentu HTML je nutné vložiť element script. V rámci elementu script je
+            potom potrebné zavolať jedinú funkciu init() bez parametrov.
+        </p>
+        <h3>Použité štýly</h3>
+        <p>Štýly použité pre jednotlivé elementy sú definované v súbore style.css. Pre správne fungovanie je nutné 
+            do súboru HTML vrámci sekcie head vložiť element link s parametrami type=<q>text/css</q> href=<q>cesta/k/style.css</q>.
+            Štýly definujú vzhľad okien, ich počiatočnú veľkosť a farebnosť a taktiež ohraničenie a veľkosť elementu desktop.
+        </p>
+    </section>
+</body>
