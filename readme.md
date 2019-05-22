@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<head>
-    <title>Dokumentácia WAP</title>
-</head>
+
 <body>
     <h1>Dokumentácia k projektu z predmetu WAP</h1>
     <h3>variant - Správce oken</h3>
